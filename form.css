@@ -1,0 +1,350 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+h2.titulo span{
+    color: rgb(109, 109, 109);
+    
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px black;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px, 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+header nav{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    gap: 80;
+
+}
+
+.topo-do-site h1{
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-do-site h1 span{
+    color: rgb(109, 109, 109);
+}
+
+.topo-do-site .txt-topo-do-site p{
+    color: black;
+    margin: 25px 0;
+}
+
+/* ESTILO ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+}
+section.especialidades .flex{
+    gap: 15px;
+}
+
+.especialidades .especialidades-box{
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.521);
+}
+
+
+.especialidades .especialidades-box i{
+    font-size: 55px;
+    color: black;
+}
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO SOBRE */
+section.sobre{
+    padding: 80px 4%;
+
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+
+}
+
+.sobre .txt-sobre{
+    color: black;
+
+}
+
+.sobre .txt-sobre h2{
+    font-size: 60px;
+    line-height: 55px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: rgb(109, 109, 109);
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 10px 0;
+}
+
+.sobre .txt-sobre h3{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.sobre .txt-sobre h3 span{
+    color: rgb(109, 109, 109);
+    display: block;
+}
+
+.sobre .txt-sobre .btn-social i{
+    font-size: 25px;
+    color: white;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    margin: 1px 5px;
+    transition: .2s;
+}
+
+/* CONSULTA */
+section.consulta{
+    padding: 80px 4%;
+    background-color: black;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.651);
+}
+
+.consulta h2{
+    color: white;
+}
+
+.btn-consulta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.btn-consulta button{
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 40px;
+    transition: .2s;
+}
+
+.btn-consulta button:hover{
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.712);
+    transform: scale(1.05);
+}
+
+/* FORM */
+section .formulario{
+    padding: 80px 4%;
+
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+form input, form select, form textarea{
+    width: 100%;
+    background-color: rgba(70, 70, 70, 0.295);
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 15px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 150px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 1020px){
+    /* gerais */
+    .flex{
+        flex-direction: column;
+        margin: 15px;
+    }
+    section .formulario{
+        padding: 80px 4%;
+    
+    }
+
+
+    form{
+        max-width: 335px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 35px;
+    }
+    
+    form input, form select, form textarea{
+        width: 100%;
+        background-color: rgba(70, 70, 70, 0.295);
+        border: 0;
+        outline: 0;
+        padding: 10px 15px;
+        border-radius: 15px;
+        color: black;
+        font-size: 18px;
+    }
+    
+    form textarea{
+        resize: none;
+        height: 200px;
+    }
+    
+    form .btn-enviar{
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    form .btn-enviar input{
+        width: 150px;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        transition: .2s;
+    
+    }
+}

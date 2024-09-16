@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <title>Santos & Andrade - Formulário</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <main>
+    <section class="formulario">
+        <div class="interface">
+            <h2 class="titulo">FORMULÁRIO JUDICIAL<span>.</span></h2>
+
+            <form action="https://formsubmit.co/guimilthegame@gmail.com" method="POST">
+                <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                <input type="text" name="email" id="email" placeholder="Seu Email:" required>
+                <input type="text" name="telefone" id="telefone" placeholder="Seu número para contato (incluindo DDD):" required>
+                <select id="caso" name="caso" required>
+                    <option value="Direito Civil">Direito Civil</option>
+                    <option value="Direito Criminal">Direito Criminal</option>
+                    <option value="Direito do Trabalho">Direito do Trabalho</option>
+                    <option value="Direito Previdenciário">Direito Previdenciário</option>
+                    <option value="Direito da Família">Direito da Família</option>
+                </select>
+                <textarea name="mensagem" id="mensagem" placeholder="Informe sua mensagem (ex: Quebrei o contrato e agora preciso pagar indenização.):" required></textarea>
+                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+            </form>
+        </div>
+    </section>
+    </main>
+</body>
+</html>

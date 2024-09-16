@@ -1,0 +1,457 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgba(30,33,36);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.interface--visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: #968E71;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #968E71;
+    font-size: 50px;
+    text-align: center;
+    margin: 15px;
+
+}
+
+h2.titulo span{
+    color: white;
+    
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #968E71;
+    transform: scale(1.05);
+}
+
+.interface .logo{
+    margin-top: 10px;
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px, 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #968E71;
+    transform: scale(1.05);
+}
+
+header nav{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .logo img{
+    scale: 30%;
+    margin: -90px;
+}
+
+header .btn-contato button{
+    margin: 38px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: #968E71;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+padding: 80px 4%;
+}
+
+section.topo-do-site .flex{
+    gap: 80;
+
+}
+
+.topo-do-site h1{
+    color: #968E71;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-do-site h1 span{
+    color: white;
+}
+
+.topo-do-site .txt-topo-do-site p{
+    color: white;
+    margin: 25px 0;
+    padding: 15px;
+}
+
+.topo-do-site .img-topo-site img{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.541);
+}
+
+/* ESTILO ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+    margin: 30px;
+
+}
+section.especialidades .flex{
+    gap: 10px;
+}
+
+.especialidades h2{
+    line-height: 50px;
+}
+
+.especialidades .especialidades-box{
+    margin-top: 15px;
+    color: #968E71;
+    width: 365px;
+    height: 215px;
+    padding: 10px;
+    border-radius: 20px; 
+    transition: 0.5s;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.541);
+}
+
+.especialidades .especialidades-box p{
+    color: white;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+}
+
+.especialidades-box:hover p{
+    height: 100px;
+    transition: 0.5s;
+}
+
+.especialidades .especialidades-box:hover{
+    height: 265px;
+    width: 800px;
+}
+
+
+.especialidades .especialidades-box i{
+    font-size: 55px;
+    color: #968E71;
+}
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+
+}
+
+/* ESTILO SOBRE */
+section.sobre{
+    padding: 80px 4%;
+
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #968E71;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 60px;
+    line-height: 55px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: white;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 10px 0;
+    color: white;
+}
+
+.sobre .txt-sobre h3{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.sobre .txt-sobre h3 span{
+    color: white;
+    display: block;
+}
+
+.sobre .img-sobre img{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.541);
+}
+
+/* ESTILO SOBRE NÓS */
+
+section.fomacao{
+    padding: 80px 4%;
+}
+
+section.formacao .flex{
+    gap: 30px;
+    margin: 10px;
+}
+
+section.formacao h3{
+    color: #968E71;
+}
+
+.txt-sobre h3 span{
+    color: white;
+    display: block;
+}
+
+.formacao .txt-box{
+    color: hsl(47, 15%, 52%);
+}
+
+.formacao .txt-box p{
+    color: white;
+}
+
+.formacao img{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.541);
+    margin-top: 15px;
+    margin: none;
+}
+
+/* BTN SOCIAL */
+
+.section .btnsocial{
+    padding: 80px 4%;
+}
+
+.btnsocial{
+    margin: 40px;
+}
+
+.btnsocial .txt-sobre h3{
+    margin-top: 30px;
+    font-size: 38px;
+    line-height: 38px;
+    color: #968E71;
+
+}
+
+.btnsocial .txt-sobre .btn-social i{
+    font-size: 25px;
+    color: white;
+}
+
+.btnsocial .txt-sobre .btn-social button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color: #968E71;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: .2s;
+}
+
+
+/* CONSULTA */
+section.consulta{
+    padding: 80px 4%;
+    background-color: #968E71;
+    box-shadow: 0 0 40px 10px #968E71;
+    margin-top: 120px;
+}
+
+.consulta h2{
+    color: white;
+}
+
+.btn-consulta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.btn-consulta button{
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 40px;
+    transition: .2s;
+}
+
+.btn-consulta button:hover{
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.712);
+    transform: scale(1.05);
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 1040px){
+    /* gerais */
+    .flex{
+        flex-direction: column;
+    }
+
+
+    /* cabeçalho */
+    .menu-desktop, .menu-mobile, .btn-contato{
+        display: none;
+    }
+
+    .logo img{
+        display: none;
+    }
+
+    /* topo do site */
+    .topo-do-site h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .img-topo-site img{
+        scale: 80%;
+        margin-left: none;
+    }
+
+    /* especialidades */
+    .titulo{
+        margin-top: none;
+    }
+    .flex{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .especialidades .especialidades-box{
+        color: #968E71;
+        width: 365px;
+        height: 180px;
+        padding: 10px;
+        border-radius: 20px; 
+        transition: 0.5s;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.541);
+    }
+    
+    .especialidades .especialidades-box p{
+        color: white;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    .especialidades-box:hover p{
+        height: 100px;
+        transition: 0.5s;
+    }
+    
+    .especialidades .especialidades-box:hover{
+        height: 265px;
+        width: 365px;
+    }
+
+    /* plano */
+    .sobre .txt-sobre{
+        margin: 20px;
+    }
+
+    .sobre .txt-sobre p{
+        font-size: 15px;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 50px;
+    }
+
+    /* formacao */
+    .formacao .flex{
+        margin: 15px;
+    }
+    
+
+    .especialidades .especialidades-box:active{
+        margin-top: 15px;
+        color: #968E71;
+        width: 365px;
+        height: 215px;
+        padding: 10px;
+        border-radius: 20px; 
+        transition: 0.5s;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.541);
+    }
+    
+    .especialidades .especialidades-box p:active{
+        color: white;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+    }
+}
